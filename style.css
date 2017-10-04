@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700i,900i|Open+Sans:200,300,400,600,700");
+/*------------------- delete styles---------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+ big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strng, 
+ sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, 
+ legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+  embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 11px;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--------------clearfix-----------------*/
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+/*--------------grid----------------*/
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-offset-0 {
+  margin-left: 0; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container {
+  width: 60vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+/*------------------section hero----------------------*/
+
+.hero {
+  background: url('http://i.imgur.com/YvYLZBl.jpg');
+  background-size: cover;
+  background-position: center; 
+  height: 70vh;
+  width: 100%;
+}
+
+.hero .circle {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px #fff solid;
+  margin-top: 50px;
+}
+
+.circle:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 3px #fff solid;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); 
+}
+
+.hero .take {
+  font-family: 'Merriweather', serif;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  left: 45px;
+  top: 8px;
+}
+
+
+
+.phone {
+  background: url('https://zapodaj.net/images/ab5dee8018b3c.png');
+  background-size: cover;
+  background-position: center;
+  width: 30vw;
+  height: 70vh;
+  position: absolute;
+  left: 53%;
+  top: 250px;
+  z-index: 10;
+}
+
+.slogan {
+  width: 30vw;
+  position: absolute;
+  top: 30vh;
+  color: #fff;
+  line-height: 20px;
+}
+  
+.slogan p {
+  padding-top: 22px;
+}
+
+.takpapp {
+  color: #fff;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 35vh;
+  font-size: 10px;
+}
+
+
+/*--------------------------section start---------------------------------*/
+
+.start {
+  padding-top: 75px;
+  height: 300px;
+  color: #222626;
+  position: relative;
+}
+
+.start p {
+  color: #A9A9A9;
+  line-height: 20px;
+}
+
+.start .text {
+  text-align: justify;
+}
+
+.start .text-2 {
+  position: absolute;
+  top: 85%;
+  text-align: justify;
+}
+
+.start h2 {
+  padding-bottom: 20px;
+}
+
+/*-------------------------section benefits--------------------------*/
+
+.benefits .col-3 {
+  height: 230px;
+  padding: 30px;
+  line-height: 20px;
+}
+
+.benefits .col-3 h2 {
+  padding-bottom: 20px;
+}
+
+.benefits .col-3 a {
+  padding-top: 20px;
+}
+
+.benefits .col-6 {
+  height: 230px;
+  padding: 30px;
+  line-height: 20px;
+}
+
+
+
+.benefits .col-6 h2 {
+  padding-bottom: 20px;
+}
+
+.benefits .col-6 a {
+  padding-top: 25px;
+}
+
+.fa-long-arrow-right {
+  padding-left: 10px;
+}
+
+.benefits {
+  margin-top: 65px;
+  width: 80%;
+  float: right;
+  position: relative;
+}
+
+.benefits .built {
+  background: #615f7d;
+}
+
+.benefits .design {
+  background: #f5989d;
+}
+
+.benefits .clients {
+  background: url('http://i.imgur.com/TXpDgkw.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.benefits .shoo {
+  background: #bd8cbf;
+}
+
+.benefits .signup {
+  background: url('http://i.imgur.com/CNfgxfl.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.benefits .perfect {
+  background: #82ca9c;
+}
+
+.benefits .start {
+  background: url('http://i.imgur.com/daM5NHl.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/*--------------------section details---------------------*/
+
+.details {
+  color: #000;
+}
+
+.details {
+  margin: 60px 0 100px 0;
+  text-align: justify;
+}
+
+.details p {
+  color: #A9A9A9;
+  line-height: 20px;
+}
+
+.details h2 {
+  margin-bottom: 13px;
+}
+
+.details h6 {
+  color: #A9A9A9;
+  padding-bottom: 13px;
+}
+
+.details .takpapp {
+  color: #A9A9A9;
+border: 1px solid red;
+}
+/*--------------------section picture---------------------*/
+
+.picture {
+  background: url('https://zapodaj.net/images/fa5eb85e1de95.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.picture .morepower {
+  position: absolute;
+  top: 350px;
+}
+
+.picture .morepower h1 {
+  line-height: 60px;
+  padding-bottom: 20px;
+}
+
+.picture .morepower p {
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+/*---------------------section reasons----------------------*/
+
+.reasons {
+  background: #82ca9c;
+  width:100%;
+  height:40vh;
+  padding-top: 70px;
+  text-align: justify;
+}
+
+.reasons p {
+  line-height: 20px;
+}
+
+.reasons h4 {
+  padding-bottom: 15px;
+}
+
+.reasons h2 {
+  padding-bottom: 25px;
+}
+
+/*----------------------section plans----------------------*/
+
+.plans {
+  height: 45vh;
+  background: #f6f7fa;
+}
+
+.plan-1, .plan-2 {
+  height: 320px;
+  margin-top: 70px;
+  transition-duration: 300ms;
+  padding: 20px;
+}
+
+.plan-1 .legacy {
+  width: 60px;
+  height: 20px;
+  background: #e1e1e1;
+  text-align: center;
+  border-radius: 4px;
+  margin: 20px 0 0 20px;
+  font-size: 9px;
+  line-height: 20px;
+  transition-duration: 300ms;
+}
+
+.plan-2 .mostpopular {
+  width: 90px;
+  height: 20px;
+  background: #e1e1e1;
+  text-align: center;
+  border-radius: 4px;
+  margin: 20px 0 0 20px;
+  font-size: 9px;
+  line-height: 20px;
+  transition-duration: 300ms;
+}
+
+.plan-2:hover .mostpopular {
+  background: #bd8cbf;
+}
+
+.plan-2 .fa {
+  color:#c5c5c5;
+  font-size: 20px;
+  
+}
+
+.plans h2 {
+  color: #000;
+  margin-left: 20px;
+}
+
+.plan-1 p {
+  color: #000;
+  line-height: 20px;
+  margin: 15px 0 15px 20px;
+}
+
+.plan-2 p {
+  color: #000;
+  line-height: 20px;
+  margin: 15px 0 15px 20px;
+}
+
+.buynows9 {
+  background: #82ca9c;
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 40px;
+  margin: 20px 0 20px 20px;
+}
+
+.plan-1 .fa {
+  color:#c5c5c5;
+  font-size: 20px;
+}
+
+.icons {
+  margin-left: 22px;
+}
+
+.icons .fa-windows{
+  margin-left: 10px;
+}
+
+.plan-1:hover, .plan-2:hover {
+  background: #fff;
+  box-shadow: 10px 10px 60px #d4d5da;
+}
+
+.plan-1:hover .legacy {
+  background: #bd8cbf;
+}
+
+/*---------------------section footer------------------------*/
+
+.footer {
+  background: #192431;
+  width: 100%;
+  height: 45vh;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.footer p {
+  line-height: 20px;
+  margin: 15px 0 20px 0;
+}
+
+.footer .col-2 p {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+.footer h4 {
+  padding-bottom: 15px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-mail {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+form span {
+  font-size: 9px;
+  color: #57697f;
+}
+
+.send {
+  background: #82ca9c;
+  color:#fff;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0; 
+  width: 60px;
+  height: 50px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 50px;
+}
+
+/*----------------------media queries--------------------------*/
+
+@media(min-width: 770px) and (max-width: 1200px) {
+  .phone {
+    width: 20vw;
+    height: 60vh;
+  }
+
+}
+
+@media(max-width: 769px) {
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+.phone {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+}
+
+.slogan {
+  left: 25%;
+  line-height: 25px;
+}
+
+.slogan h1 {
+  font-size: 22px;
+}
+
+.start h2{
+  text-align: center;
+}
+
+.start .text-2 {
+  position: static;
+}
+
+.benefits{
+  float: none;
+  margin: 0 auto;
+}
+
+.details {
+  text-align: center;
+}
+
+.picture {
+  text-align: center;
+}
+
+.morepower {
+  position: static;
+  margin: 0 auto;
+}
+
+.picture {
+  height: 70vh;
+}
+
+.picture .morepower h1 {
+  line-height: 30px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.picture .morepower p {
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+.reasons {
+  text-align: center;
+  background: #82ca9c;
+  height:65vh;
+}
+
+.plans {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 90vh;
+}
+
+.plans p, .plans h2, .plans .icons {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.plans .legacy, .plans .mostpopular {
+  margin: 0 auto;
+}
+
+.plans .buynows9 {
+  margin: 0 auto;
+}
+
+.plans .icons {
+  padding-top: 20px;
+}
+
+.plan-1, .plan-2 {
+  background: #fff;
+  box-shadow: 10px 10px 60px #d4d5da;
+}
+
+.plan-1 .legacy, .plan-2 .mostpopular {
+  background: #bd8cbf;
+}
+
+.footer {
+  text-align: center;
+  height: 70vh;
+}
+
+.contact {
+  padding-bottom: 35px;
+}
+
+}
